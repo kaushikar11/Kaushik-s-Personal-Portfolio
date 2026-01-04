@@ -13,10 +13,10 @@ title                    : "Kaushik Alaguvadivel Ramya"
 title_separator          : "-"
 name                     : &name "Kaushik Alaguvadivel Ramya"
 description              : &description "Kaushik Alaguvadivel Ramya's portfolio"   # Update this with a general description of your site, this is the default if not overridden by a page
-url                      : https://academicpages.github.io # The base hostname & protocol for your site e.g. "https://[your GitHub username].github.io",
+url                      : https://kaushikar.vercel.app # The base hostname & protocol for your site e.g. "https://[your GitHub username].github.io",
                                                            # or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "academicpages/academicpages.github.io"
+repository               : "kaushikar11/Kaushik-s-Personal-Portfolio"
 
 # Site Author - The following control what appear as part of the author content on the side bar.
 #               If a field is blank the icon and link will not appear, otherwise it will be shown.
@@ -25,12 +25,12 @@ author:
   # Biographic information
   avatar           : "profile.png"
   name             : "Kaushik Alaguvadivel Ramya"
-  pronouns         : # example: "she/her"  
+  pronouns         : "He/Him" 
   bio              : "AI/ML Expert and Software Engineer"
   location         : "New York City, NY"
   employer         : "New York University"
   phone            : "929-754-9853"
-  uri              : # URL
+  uri              : "https://kaushikar.vercel.app"
   email            : "kaushikar2211@gmail.com" 
 
   # Academic websites
