@@ -1,0 +1,12 @@
+---
+title: "Enhancing Human Activity Recognition: An Exploration of Machine Learning Models and Explainable AI Approaches for Feature Contribution Analysis"
+collection: publications
+category: conferences
+permalink: /publication/2024-02-21-enhancing-human-activity-recognition
+excerpt: 'Published on February 21, 2024. This study utilizes an Activity of Daily Living (ADL) dataset collected from 30 participants who performed six distinct activities while wearing smartphones equipped with sensors. Explainable AI (XAI) techniques like LIME and SHAP are used to understand the attributes significantly influencing model predictions.'
+date: 2024-02-21
+venue: '2023 International Conference on Energy, Materials and Communication Engineering (ICEMCE), December 14-15, 2023'
+citation: 'A. R. Kaushik, K. S. Gurucharan and S. Padmavathi, &quot;Enhancing Human Activity Recognition: An Exploration of Machine Learning Models and Explainable AI Approaches for Feature Contribution Analysis,&quot; 2023 International Conference on Energy, Materials and Communication Engineering (ICEMCE), Madurai, India, 2023, pp. 1-6, doi: 10.1109/ICEMCE57940.2023.10434184.'
+---
+
+Human Activity Recognition (HAR) holds significant importance in people's daily lives due to its capability to extract comprehensive high-level insights into human activities from wearable or stationary devices. Extensive research has been conducted in the field of HAR, where the research community has leveraged various machine-learning approaches for the classification of human activities. In this study, we utilize an Activity of Daily Living (ADL) dataset collected from 30 participants who performed six distinct activities while wearing smartphones equipped with sensors. After partitioning the data into training and testing sets, we employed machine learning models such as the Random Forest Classifier, XGBoost Classifier, Gradient Boosting Classifier, k-Nearest Neighbors Classifier, AdaBoost Classifier, and Support Vector Classifier. Explainable AI (XAI) techniques like LIME and SHAP are used to understand the attributes significantly influencing model predictions. By conducting local interpretations on randomly selected samples for each class, the top 10 influential features were identified. SHAP provided both global and local explanations. These insights shed light on factors impacting predictions, enhancing our grasp of the dataset and model performance. This analysis informs decision-making and offers potential avenues for model improvement.
