@@ -2,7 +2,6 @@
 title: "Enhanced Drone Classification using Transfer Learning and Optimized RF-Spectrogram"
 collection: publications
 category: conferences
-permalink: /publication/2025-07-06-enhanced-drone-classification
 excerpt: 'Presented on July 6, 2025. This paper presents important contributions toward state-of-the-art drone classification systems that are deployable in challenging environments. Building on the groundwork laid by existing drone categorization methods, we provide two major contributions: (i) a new processing pipeline that converts RF signals into optimized spectrogram images for computer vision applications, and (ii) an extensive analysis of nine state-of-the-art CNN models.'
 date: 2025-07-06
 venue: 'Presented at Conference on July 6, 2025'

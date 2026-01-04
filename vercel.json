@@ -1,5 +1,10 @@
 {
-  "buildCommand": "bundle exec jekyll build",
-  "outputDirectory": "_site",
-  "installCommand": "gem install bundler && bundle install"
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "rewrites": [
+    {
+      "source": "/publication/:path*",
+      "destination": "/publication/:path*/index.html"
+    }
+  ]
 }

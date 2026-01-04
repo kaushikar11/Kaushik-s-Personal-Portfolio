@@ -2,7 +2,6 @@
 title: "Performance Analysis of Regression Models in Solar PV Forecasting"
 collection: publications
 category: conferences
-permalink: /publication/2023-06-01-performance-analysis-regression-solar-pv
 excerpt: 'Published on June 1, 2023. This work aims to produce reliable short-term forecasting using machine learning methods such as Linear Regression, Random Forest Regression, and Decision Tree Regression. Results show 99% accuracy for the proposed models.'
 date: 2023-06-01
 venue: 'IEEE Conference, March 18-20, 2023'

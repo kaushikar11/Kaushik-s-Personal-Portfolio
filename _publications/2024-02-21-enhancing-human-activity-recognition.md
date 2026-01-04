@@ -2,7 +2,6 @@
 title: "Enhancing Human Activity Recognition: An Exploration of Machine Learning Models and Explainable AI Approaches for Feature Contribution Analysis"
 collection: publications
 category: conferences
-permalink: /publication/2024-02-21-enhancing-human-activity-recognition
 excerpt: 'Published on February 21, 2024. This study utilizes an Activity of Daily Living (ADL) dataset collected from 30 participants who performed six distinct activities while wearing smartphones equipped with sensors. Explainable AI (XAI) techniques like LIME and SHAP are used to understand the attributes significantly influencing model predictions.'
 date: 2024-02-21
 venue: '2023 International Conference on Energy, Materials and Communication Engineering (ICEMCE), December 14-15, 2023'
