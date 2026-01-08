@@ -3,7 +3,7 @@ title: "LegalAppa – AI-Driven Legal Document Platform"
 excerpt: "Full-stack platform serving 15+ lawyers with AI-powered document automation and LaTeX compilation. Reduced manual document preparation time by 97% using React.js, Node.js, Firebase, and LLM integration."
 collection: portfolio
 date: 2024-07-01
-published_url: https://legalappa.com
+published_url: https://legalappa.vercel.app
 ---
 
 ## Overview
