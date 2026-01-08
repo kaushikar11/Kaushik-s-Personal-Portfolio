@@ -15,7 +15,7 @@ Engineered **full-stack platform** using React.js, Node.js, and Python, serving 
 - Integrated **LLM for legal text generation** with LaTeX compilation, enabling AI-driven workflows for professional legal document creation
 - Reduced manual document preparation time by **97%**
 
-**Published Link:** <a href="https://legalappa.com" class="btn btn--small" target="_blank">Visit LegalAppa <i class="fas fa-external-link-alt" aria-hidden="true"></i></a>
+**Published Link:** <a href="https://legalappa.vercel.app" class="btn btn--small" target="_blank">Visit LegalAppa <i class="fas fa-external-link-alt" aria-hidden="true"></i></a>
 
 ## Technologies
 React.js, Node.js, Firebase, GenAI, LLM, LaTeX, REST API, Full-Stack Development
