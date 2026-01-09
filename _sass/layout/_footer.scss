@@ -13,12 +13,12 @@
   width: 100%;
   clear: both;
   
-  /* Footer starts in normal flow, becomes fixed when it reaches bottom */
+  /* Footer always at end of content */
   position: relative;
   margin-top: 3em;
   
-  /* When footer becomes fixed (via JavaScript) */
-  &.footer-fixed {
+  /* Footer sticks to bottom when it reaches viewport (via JavaScript) */
+  &.footer-sticky {
     position: fixed;
     bottom: 0;
     left: 0;

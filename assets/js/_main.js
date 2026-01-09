@@ -102,62 +102,59 @@ $(document).ready(function () {
   // Enable the theme toggle
   $('#theme-toggle').on('click', toggleTheme);
 
-  // Footer behavior: initially at end of content, becomes fixed and locked when it reaches bottom
-  var footerLocked = false;
-  var maxScrollPosition = 0;
-  var savedWindowHeight = 0;
+  // Footer behavior: always at end of content, sticks to bottom when it reaches viewport
+  // Footer can only move down with content, never up
+  var lastScrollTop = 0;
+  var footerNaturalTop = 0;
+  var footerFixed = false;
   
   var handleFooter = function () {
     var footer = $(".page__footer");
-    var windowHeight = $(window).height();
-    savedWindowHeight = windowHeight; // Save for resize handler
     var scrollTop = $(window).scrollTop();
-    var footerTop = footer.offset().top;
-    var footerHeight = footer.outerHeight(true);
+    var windowHeight = $(window).height();
+    var documentHeight = $(document).height();
     
-    // If footer is not yet fixed/locked
-    if (!footerLocked) {
-      // Check if footer has reached the bottom of viewport
-      if (scrollTop + windowHeight >= footerTop) {
-        // Footer has reached bottom, lock it in place
-        footerLocked = true;
-        footer.addClass("footer-fixed");
-        // Calculate the exact scroll position where footer reached bottom
-        maxScrollPosition = footerTop + footerHeight - windowHeight;
-        // Add padding to body to prevent content jump
-        $("body").css("padding-bottom", footerHeight + "px");
-        // Lock scroll at this position
-        $(window).scrollTop(maxScrollPosition);
-        
-        // Prevent further scrolling beyond this point
-        $(window).on("scroll.footerLock", function() {
-          if ($(window).scrollTop() > maxScrollPosition) {
-            $(window).scrollTop(maxScrollPosition);
-          }
-        });
+    // Get footer's natural position (when not sticky)
+    if (footerNaturalTop === 0) {
+      footer.removeClass("footer-sticky");
+      footerNaturalTop = footer.offset().top;
+    }
+    
+    var footerHeight = footer.outerHeight(true);
+    var scrollDirection = scrollTop > lastScrollTop ? 'down' : 'up';
+    lastScrollTop = scrollTop;
+    
+    // Check if footer has reached or passed the bottom of viewport
+    var footerBottom = footerNaturalTop + footerHeight;
+    var viewportBottom = scrollTop + windowHeight;
+    
+    if (viewportBottom >= footerBottom) {
+      // Footer has reached bottom, make it stick
+      if (!footerFixed) {
+        footerFixed = true;
+        footer.addClass("footer-sticky");
+        // Prevent scrolling beyond footer
+        var maxScroll = footerBottom - windowHeight;
+        if (scrollTop > maxScroll) {
+          $(window).scrollTop(maxScroll);
+        }
       }
-    } else {
-      // Footer is locked, prevent scrolling beyond max position
-      if ($(window).scrollTop() > maxScrollPosition) {
-        $(window).scrollTop(maxScrollPosition);
+    } else if (scrollDirection === 'up') {
+      // Scrolling up - footer goes back to natural position
+      if (footerFixed) {
+        footerFixed = false;
+        footer.removeClass("footer-sticky");
       }
     }
   };
   
   // Handle footer on scroll
   $(window).on("scroll", handleFooter);
-  // Handle footer on resize (unlock if window resizes significantly)
-  $(window).on("resize", function() {
-    if (footerLocked && savedWindowHeight > 0 && Math.abs($(window).height() - savedWindowHeight) > 50) {
-      footerLocked = false;
-      $(".page__footer").removeClass("footer-fixed");
-      $("body").css("padding-bottom", "0");
-      $(window).off("scroll.footerLock");
-      handleFooter();
-    }
+  // Handle footer on load and resize
+  $(document).ready(function() {
+    handleFooter();
+    $(window).on("resize", handleFooter);
   });
-  // Handle footer on load
-  $(document).ready(handleFooter);
 
   // FitVids init
   fitvids();

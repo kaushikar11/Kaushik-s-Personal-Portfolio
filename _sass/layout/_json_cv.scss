@@ -9,6 +9,7 @@
   font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   color: var(--global-text-color);
   line-height: 1.6;
+  padding-bottom: 4em; /* Add padding below resume content to push footer down */
 }
 
 /* Header Styles */
@@ -214,6 +215,17 @@
 .cv-references {
   font-style: italic;
   color: var(--global-text-color);
+}
+
+/* Add padding below resume/CV page content for cv-layout */
+body.cv-layout {
+  #main {
+    padding-bottom: 4em;
+    
+    .container {
+      padding-bottom: 0; /* Padding handled by #main above */
+    }
+  }
 }
 
 /* Print Styles */
