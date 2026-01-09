@@ -1,4 +1,8 @@
 {
+  "buildCommand": "bundle install && bundle exec jekyll build",
+  "outputDirectory": "_site",
+  "installCommand": "gem install bundler && bundle install",
+  "framework": null,
   "cleanUrls": true,
   "trailingSlash": false,
   "rewrites": [

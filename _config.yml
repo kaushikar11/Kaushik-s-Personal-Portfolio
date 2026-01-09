@@ -25,7 +25,6 @@ author:
   # Biographic information
   avatar           : "profile.png"
   name             : "Kaushik Alaguvadivel Ramya"
-  pronouns         : "He/Him" 
   bio              : "AI/ML Expert and Software Engineer"
   location         : "New York City, NY"
   employer         : "New York University"
@@ -39,7 +38,6 @@ author:
   googlescholar    : "https://scholar.google.com/citations?user=qghXVakAAAAJ&hl=en"
   inspire-hep      : # URL
   impactstory      : # URL
-  orcid            : "https://orcid.org/0009-0002-7447-2935"
   semantic         : # URL
   ssrn             : # URL
   pubmed           : # URL

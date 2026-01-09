@@ -1,0 +1,40 @@
+# Build outputs
+_site/
+.sass-cache/
+node_modules/
+vendor/
+.bundle/
+
+# Git
+.git/
+.gitignore
+
+# IDE files
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Documentation and scripts (optional)
+README.md
+CONTRIBUTING.md
+LICENSE
+markdown_generator/
+scripts/
+
+# Docker files (to avoid recursive copying)
+Dockerfile
+docker-compose.yaml
+.dockerignore
+
+# Package files
+package-lock.json
+Gemfile.lock
+
+# Optional: exclude sample/test files
+# Uncomment if you want to exclude these
+# _drafts/
+# talkmap/
+

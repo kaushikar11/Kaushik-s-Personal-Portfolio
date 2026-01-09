@@ -102,21 +102,62 @@ $(document).ready(function () {
   // Enable the theme toggle
   $('#theme-toggle').on('click', toggleTheme);
 
-  // Enable the sticky footer
-  var bumpIt = function () {
-    $("body").css("padding-bottom", "0");
-    $("body").css("margin-bottom", $(".page__footer").outerHeight(true));
-  }
-  $(window).resize(function () {
-    didResize = true;
+  // Footer behavior: initially at end of content, becomes fixed and locked when it reaches bottom
+  var footerLocked = false;
+  var maxScrollPosition = 0;
+  var savedWindowHeight = 0;
+  
+  var handleFooter = function () {
+    var footer = $(".page__footer");
+    var windowHeight = $(window).height();
+    savedWindowHeight = windowHeight; // Save for resize handler
+    var scrollTop = $(window).scrollTop();
+    var footerTop = footer.offset().top;
+    var footerHeight = footer.outerHeight(true);
+    
+    // If footer is not yet fixed/locked
+    if (!footerLocked) {
+      // Check if footer has reached the bottom of viewport
+      if (scrollTop + windowHeight >= footerTop) {
+        // Footer has reached bottom, lock it in place
+        footerLocked = true;
+        footer.addClass("footer-fixed");
+        // Calculate the exact scroll position where footer reached bottom
+        maxScrollPosition = footerTop + footerHeight - windowHeight;
+        // Add padding to body to prevent content jump
+        $("body").css("padding-bottom", footerHeight + "px");
+        // Lock scroll at this position
+        $(window).scrollTop(maxScrollPosition);
+        
+        // Prevent further scrolling beyond this point
+        $(window).on("scroll.footerLock", function() {
+          if ($(window).scrollTop() > maxScrollPosition) {
+            $(window).scrollTop(maxScrollPosition);
+          }
+        });
+      }
+    } else {
+      // Footer is locked, prevent scrolling beyond max position
+      if ($(window).scrollTop() > maxScrollPosition) {
+        $(window).scrollTop(maxScrollPosition);
+      }
+    }
+  };
+  
+  // Handle footer on scroll
+  $(window).on("scroll", handleFooter);
+  // Handle footer on resize (unlock if window resizes significantly)
+  $(window).on("resize", function() {
+    if (footerLocked && savedWindowHeight > 0 && Math.abs($(window).height() - savedWindowHeight) > 50) {
+      footerLocked = false;
+      $(".page__footer").removeClass("footer-fixed");
+      $("body").css("padding-bottom", "0");
+      $(window).off("scroll.footerLock");
+      handleFooter();
+    }
   });
-  setInterval(function () {
-    if (didResize) {
-      didResize = false;
-      bumpIt();
-    }}, 250);
-  var didResize = false;
-  bumpIt();
+  // Handle footer on load
+  $(document).ready(handleFooter);
 
   // FitVids init
   fitvids();
