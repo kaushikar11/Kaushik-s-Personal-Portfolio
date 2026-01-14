@@ -7,53 +7,58 @@ author_profile: true
 
 {% include base_path %}
 
-## Machine Learning Research Assistant
-**Thiagarajar College of Engineering** | *April 2022 – May 2025*  
-*Research Advisor: Dr. S. Padmavathi (spmcse@tce.edu)*  
-*Focus: Explainable AI, Deep Learning, Fairness in ML, UAV/Drone Classification*
+## Education
 
-Published **3 IEEE conference papers** as first author on Artificial Intelligence and Machine Learning topics including drone classification, human activity recognition, and solar PV forecasting. View all publications on the <a href="{{ base_path }}/publications/" class="btn btn--info btn--small">Publications</a> page.
-{: .notice--info}
+<div class="timeline-section">
+  <div class="timeline-item">
+    <h3>New York University</h3>
+    <p><strong>Master of Science in Computer Science</strong><br>
+    <em>September 2025 – May 2027</em><br>
+    <strong>GPA:</strong> 3.33/4.0<br>
+    <a href="{{ base_path }}/education/nyu-ms/">more…</a></p>
+  </div>
 
-- Researched with **Defence Institute of Advanced Technology** to develop a novel lightweight CNN architecture for UAV/Drone identification and classification. Independently designed Cross Stage Partial Network reducing computational complexity **5×**, inference time **20×**, and FLOPs **5×** while improving accuracy by **5%** and reducing model size by **7 times**
-- Implemented **Shapley value-based game theory approach** for feature contribution analysis across **500+ sensor attributes** in wearable device applications, enhancing model transparency and interpretability for human activity recognition systems
-- Conducted research on **Explainable AI** using SHAP and LIME techniques to interpret deep learning models, ensuring fairness and bias mitigation in machine learning predictions
-- Investigated fairness metrics including **Statistical Parity Difference (SPD)**, **Equal Opportunity Difference (EOD)**, and **Theil Index (TI)** to assess and improve model fairness across demographic groups
-
----
-
-## Teaching Assistant
-**Thiagarajar College of Engineering** | *February 2023 – April 2025*  
-*Professor: Dr. S. Padmavathi*
-
-Supporting over **200+ students** in Cloud Computing and Distributed Systems courses
-{: .notice--success}
-
-- Teaching Assistant for **Cloud Computing** and **Distributed Systems** courses
-- Conducted lab sessions and office hours for Cloud Computing and Distributed Systems courses
-- Assisted in grading assignments and providing constructive feedback to improve student learning outcomes
+  <div class="timeline-item">
+    <h3>Thiagarajar College of Engineering</h3>
+    <p><strong>Bachelor of Technology in Information Technology</strong><br>
+    <em>November 2021 – May 2025</em><br>
+    <strong>GPA:</strong> 3.7/4.0<br>
+    <a href="{{ base_path }}/education/tce-btech/">more…</a></p>
+  </div>
+</div>
 
 ---
 
-## Software Engineer Intern (Machine Learning Engineer)
-**Pi42** | *December 2023 – January 2024*  
-*Supervisor: Karthikeyan N G, CTO of Pi42.com*  
-*Location: Bengaluru, Karnataka, India (Remote)*
+## Experience
 
-**Project:** <a href="https://tweeshirt.vercel.app" class="btn btn--warning btn--small" target="_blank">Visit Tweeshirt <i class="fas fa-external-link-alt" aria-hidden="true"></i></a>
-{: .notice--warning}
+<div class="timeline-section">
+  <div class="timeline-item">
+    <h3>Machine Learning Research Assistant</h3>
+    <p><strong>Thiagarajar College of Engineering</strong> | <em>April 2022 – May 2025</em><br>
+    <em>Research Advisor: Dr. S. Padmavathi (spmcse@tce.edu)</em><br>
+    <em>Focus: Explainable AI, Deep Learning, Fairness in ML, UAV/Drone Classification</em><br>
+    <a href="{{ base_path }}/experience/ml-research-assistant/">more…</a></p>
+  </div>
 
-- Developed an E-commerce platform: **Tweeshirt** - a GenAI-powered e-commerce platform enabling personalized merchandise creation from social media content using Stable Diffusion model weights and Generative AI models
-- Architected and deployed Tweeshirt, engineered full-stack solution with Next.js frontend and Node.js backend, integrating Twitter API for content retrieval and building secure OAuth-based authentication system with automated session management
-- Built RESTful API backend processing AI image generation requests using Stable Diffusion Generative model and integrated Printrove e-commerce API for end-to-end order fulfillment, managing product customization (color, size selection), payment processing, and shipping address handling
-- Shipped application to production with optimized build configurations, achieving **40% improvement** in workflow efficiency through streamlined automation from AI-powered image generation to delivery of personalized merchandise
+  <div class="timeline-item">
+    <h3>Teaching Assistant</h3>
+    <p><strong>Thiagarajar College of Engineering</strong> | <em>February 2023 – April 2025</em><br>
+    <em>Professor: Dr. S. Padmavathi</em><br>
+    <a href="{{ base_path }}/experience/teaching-assistant/">more…</a></p>
+  </div>
 
----
+  <div class="timeline-item">
+    <h3>Software Engineer Intern (Machine Learning Engineer)</h3>
+    <p><strong>Pi42</strong> | <em>December 2023 – January 2024</em><br>
+    <em>Supervisor: Karthikeyan N G, CTO of Pi42.com</em><br>
+    <em>Location: Bengaluru, Karnataka, India (Remote)</em><br>
+    <a href="{{ base_path }}/experience/pi42-intern/">more…</a></p>
+  </div>
 
-## Data Analytics Intern
-**Kaar Technologies** | *June 2023 – July 2023*  
-*Location: Chennai, Tamil Nadu, India (On-site)*
-
-- Developed **Python-based data pipeline** for seasonal sales analysis using Pandas and NumPy, improving sales forecasting accuracy by **15%** through ARIMA and regression modeling
-- Built **interactive dashboards** visualizing sales trends and predictions using Power BI, enabling data-driven decision-making for business stakeholders
-- Performed statistical modeling and time-series analysis to identify seasonal patterns and trends in sales data
+  <div class="timeline-item">
+    <h3>Data Analytics Intern</h3>
+    <p><strong>Kaar Technologies</strong> | <em>June 2023 – July 2023</em><br>
+    <em>Location: Chennai, Tamil Nadu, India (On-site)</em><br>
+    <a href="{{ base_path }}/experience/kaar-intern/">more…</a></p>
+  </div>
+</div>

@@ -153,3 +153,36 @@
     font-size: $type-size-7;
   }
 }
+
+/* GitHub button styling - black theme */
+a.btn[href*="github.com"] {
+  background-color: #000000 !important;
+  color: #ffffff !important;
+
+  &:hover {
+    background-color: #333333 !important;
+    color: #ffffff !important;
+  }
+
+  .fab.fa-github,
+  i.fab.fa-github {
+    color: #ffffff !important;
+  }
+}
+
+/* Google Scholar button styling - scholar blue theme */
+a.btn[href*="scholar.google.com"],
+.btn--scholar {
+  background-color: #4285F4 !important;
+  color: #ffffff !important;
+
+  &:hover {
+    background-color: #3367D6 !important;
+    color: #ffffff !important;
+  }
+
+  .ai-google-scholar,
+  i.ai-google-scholar {
+    color: #ffffff !important;
+  }
+}

@@ -37,9 +37,12 @@
     {% if post.date %}
      <p class="page__date">
        <strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Published:" }}</strong> 
-       <time datetime="{{ post.date | default: "1900-01-01" | date_to_xmlschema }}">{{ post.date | default: "1900-01-01" | date: "%B %d, %Y" }}</time>
+       <time datetime="{{ post.date | default: "1900-01-01" | date_to_xmlschema }}">{{ post.date | default: "1900-01-01" | date: "%B %Y" }}</time>
        {% if post.published_url %}
-         <a href="{{ post.published_url }}" class="btn btn--small btn--info" target="_blank" style="margin-left: 1em;">Visit Project <i class="fas fa-external-link-alt" aria-hidden="true"></i></a>
+         <a href="{{ post.published_url }}" class="btn btn--small btn--github" target="_blank" style="margin-left: 1em;"><i class="fas fa-external-link-alt" aria-hidden="true"></i> View Project</a>
+       {% endif %}
+       {% if post.github_url %}
+         <a href="{{ post.github_url }}" class="btn btn--small btn--github" target="_blank" style="margin-left: 0.5em;"><i class="fab fa-github" aria-hidden="true"></i> GitHub</a>
        {% endif %}
      </p>
     {% endif %}

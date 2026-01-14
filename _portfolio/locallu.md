@@ -2,7 +2,10 @@
 title: "Locallu – Freelancer-Employer Marketplace"
 excerpt: "Dual-sided platform connecting freelancers and employers with separate dashboards, MVC architecture, and real-time notifications. Built with React.js, Node.js, MongoDB, and Firebase for instant messaging and job management."
 collection: portfolio
-date: 2024-02-01
+date: 2024-11-01
+order: 1
+published_url: https://locallu.vercel.app
+github_url: https://github.com/kaushikar11/Locallu
 ---
 
 ## Overview

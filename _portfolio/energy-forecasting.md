@@ -2,7 +2,9 @@
 title: "Energy Consumption Disaggregation and Forecasting"
 excerpt: "Time-series forecasting application achieving 95% accuracy for 3-day predictions using LSTM and Graph Signal Processing. Selected for college-level Demo-Day with 90%+ appliance-level energy disaggregation accuracy."
 collection: portfolio
-date: 2022-08-01
+date: 2023-04-01
+order: 6
+github_url: https://github.com/kaushikar11/Electrical-Energy-Consumption-Forecasting
 ---
 
 ## Overview

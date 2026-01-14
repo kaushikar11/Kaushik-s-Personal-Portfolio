@@ -41,7 +41,18 @@
         {% if post.collection == 'teaching' %}
           <p> {{ post.type }}, <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
         {% elsif post.collection == 'publications' %}
-          <p><i>{{ post.venue }}</i></p>
+          <p><i>{{ post.venue }}</i>
+          {% if post.github_url or post.scholar_url %}
+            <span style="margin-left: 1em;">
+              {% if post.scholar_url %}
+                <a href="{{ post.scholar_url }}" class="btn btn--small btn--scholar" target="_blank" style="margin-right: 0.5em;"><i class="ai ai-google-scholar" aria-hidden="true"></i> Google Scholar</a>
+              {% endif %}
+              {% if post.github_url %}
+                <a href="{{ post.github_url }}" class="btn btn--small" target="_blank"><i class="fab fa-github" aria-hidden="true"></i> GitHub</a>
+              {% endif %}
+            </span>
+          {% endif %}
+          </p>
         {% elsif post.date %}
          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Published:" }}</strong> <time datetime="{{ post.date | default: "1900-01-01" | date_to_xmlschema }}">{{ post.date | default: "1900-01-01" | date: "%B %d, %Y" }}</time></p>
         {% endif %}

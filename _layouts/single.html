@@ -36,6 +36,32 @@ layout: default
         
         {% if page.collection == 'teaching' %}
           <p> {{ page.type }}, <i>{{ page.venue }}</i>, {{ page.date | default: "1900-01-01" | date: "%Y" }} </p>
+        {% elsif page.collection == 'publications' %}
+          <p>Published in <i>{{ page.venue }}</i>, {{ page.date | default: "1900-01-01" | date: "%Y" }}
+          {% if page.github_url or page.scholar_url %}
+            <span style="margin-left: 1em;">
+              {% if page.scholar_url %}
+                <a href="{{ page.scholar_url }}" class="btn btn--small btn--scholar" target="_blank" style="margin-right: 0.5em;"><i class="ai ai-google-scholar" aria-hidden="true"></i> Google Scholar</a>
+              {% endif %}
+              {% if page.github_url %}
+                <a href="{{ page.github_url }}" class="btn btn--small" target="_blank"><i class="fab fa-github" aria-hidden="true"></i> GitHub</a>
+              {% endif %}
+            </span>
+          {% endif %}
+          </p>
+        {% elsif page.collection == 'portfolio' %}
+          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Published:" }}</strong> <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | default: "1900-01-01" | date: "%B %Y" }}</time>
+          {% if page.published_url or page.github_url %}
+            <span style="margin-left: 1em;">
+              {% if page.published_url %}
+                <a href="{{ page.published_url }}" class="btn btn--small btn--github" target="_blank" style="margin-right: 0.5em;"><i class="fas fa-external-link-alt" aria-hidden="true"></i> View Project</a>
+              {% endif %}
+              {% if page.github_url %}
+                <a href="{{ page.github_url }}" class="btn btn--small btn--github" target="_blank"><i class="fab fa-github" aria-hidden="true"></i> GitHub</a>
+              {% endif %}
+            </span>
+          {% endif %}
+          </p>
         {% elsif page.venue and page.date %}
           <p>Published in <i>{{ page.venue }}</i>, {{ page.date | default: "1900-01-01" | date: "%Y" }} </p>
         {% elsif page.date %}
@@ -82,8 +108,6 @@ layout: default
         {% endif %}
         {% include page__taxonomy.html %}
       </footer>
-
-      {% if page.share %}{% include social-share.html %}{% endif %}
 
       {% include post_pagination.html %}
     </div>

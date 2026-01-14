@@ -2,7 +2,9 @@
 title: "Emotion Recognition Research using XAI and Fair AI"
 excerpt: "GRU-based emotion classification system achieving 95% accuracy using physiological biosignals (ECG, EMG, GSR, respiration, BVP). Implemented SHAP/LIME explainability and fairness-aware techniques reducing demographic bias by 30%."
 collection: portfolio
-date: 2024-11-01
+date: 2025-05-01
+order: 5
+github_url: https://github.com/stars/kaushikar11/lists/emotion-recognition-system
 ---
 
 ## Overview

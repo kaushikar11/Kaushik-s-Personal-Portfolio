@@ -1,12 +1,15 @@
 ---
-title: "TCE Ladies Hostel Admin Management System"
+title: "TCE Hostel Admin Management System"
 excerpt: "Full-stack MERN application managing 1000+ student records, currently in active production. Reduces manual record-keeping time by 85% and eliminates 95% of data-entry errors using MongoDB Atlas with 99.99% uptime."
 collection: portfolio
-date: 2024-06-01
+date: 2024-09-01
+order: 4
+published_url: https://hostel-db-client.vercel.app
+github_url: https://github.com/stars/kaushikar11/lists/hosteldb
 ---
 
 ## Overview
-Independently built **full-stack MERN application** deployed for TCE ladies' hostel, managing **1000+ student records** with admin dashboard featuring CRUD functionality for personal information, room assignments, and payment records.
+Independently built **full-stack MERN application** deployed for TCE hostel, managing **1000+ student records** with admin dashboard featuring CRUD functionality for personal information, room assignments, and payment records.
 
 ## Key Features
 - Engineered **MongoDB schema** with optimized indexing for fast queries using MongoDB Atlas (99.99% uptime)
