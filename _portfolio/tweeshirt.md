@@ -4,7 +4,7 @@ excerpt: "GenAI-powered e-commerce platform enabling personalized merchandise cr
 collection: portfolio
 date: 2024-02-01
 order: 2
-published_url: https://tweeshirt-vercel.app
+published_url: https://tweeshirt.vercel.app
 github_url: https://github.com/stars/kaushikar11/lists/tweeshirt-app
 ---
 
