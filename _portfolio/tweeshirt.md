@@ -3,7 +3,7 @@ title: "Tweeshirt – AI-Powered E-commerce Platform"
 excerpt: "GenAI-powered e-commerce platform enabling personalized merchandise creation from social media content using Stable Diffusion. Processes 300+ daily requests with sub-2-second latency using Next.js, Node.js, and Printrove API integration."
 collection: portfolio
 date: 2024-02-01
-order: 2
+order: 3
 published_url: https://tweeshirt.vercel.app
 github_url: https://github.com/stars/kaushikar11/lists/tweeshirt-app
 ---
