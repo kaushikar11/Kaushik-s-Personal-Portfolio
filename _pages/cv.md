@@ -9,9 +9,6 @@ redirect_from:
 
 {% include base_path %}
 
-## Download Resume
-
-<div style="margin-bottom: 2em;">
-  <a href="/files/Kaushik_Resume_AI_ML.pdf" class="btn btn--large" style="margin-right: 1em; margin-bottom: 0.5em;"><i class="fas fa-file-pdf" aria-hidden="true"></i> Download Resume - AI/ML Roles (PDF)</a>
-  <a href="/files/Kaushik_Resume_SW.pdf" class="btn btn--large" style="margin-bottom: 0.5em;"><i class="fas fa-file-pdf" aria-hidden="true"></i> Download Resume - Software Engineering Roles (PDF)</a>
+<div style="width: 100%; height: 90vh; margin: 0; padding: 0;">
+  <iframe src="{{ base_path }}/files/Kaushik_Resume_AI_ML.pdf" style="width: 100%; height: 100%; border: none;"></iframe>
 </div>
